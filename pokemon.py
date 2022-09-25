@@ -11,7 +11,7 @@ class Pokemon:
             return self.pokemon
         elif type2 == 'Any':
             return self.pokemon.loc[self.pokemon['Type1'] == type1]
-        elif type2 == 'Any':
+        elif type1 == 'Any':
             return self.pokemon.loc[self.pokemon['Type2'] == type2]
         else:
             return self.pokemon.loc[(self.pokemon['Type1'] == type1) & (self.pokemon['Type2'] == type2)]
